@@ -3,7 +3,7 @@
   const userNameInput = document.getElementById('user-name');
   const assessmentButton = document.getElementById('assessment');
   const resultDivided = document.getElementById('result-area');
-  const tweetDivided = document.getElementById('tweet-area);
+  const tweetDivided = document.getElementById('tweet-area');
   
   /**
   * 指定した要素の子供を全て除去する
@@ -78,7 +78,7 @@
     }
     
     // 文字のコード番号の合計を回答の数で割って添字の数値を求める
-    const index = subOfcharCode % answers.length;
+    const index = sumOfcharCode % answers.length;
     let result = answers[index];
     
     result = result.replace(/{userName}/g, userName);
